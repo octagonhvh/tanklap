@@ -317,7 +317,7 @@ button {
     background-color: rgb(69, 75, 27);
 }
 #valasztas3 {
-    background-image: url(/kep/teszt/terepminta.jpg);
+    background-image: url(../kep/teszt/terepminta.jpg);
 }
 #valasztas4 {
     background-color: rgb(125, 118, 67);
