@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=BBH+Sans+Bogle&family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arimo, serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: rgba(69, 75, 27, 0.822);
+    flex-flow: column nowrap;
+    gap: 1.8em;
+    align-items: center;
+    padding-bottom: 10px;
+    border: solid 1px rgb(130, 130, 130);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: linear-gradient(60deg, rgba(69, 75, 27, 0.822), rgba(121, 128, 77, 0.822));
+}
+
+header h1 {
+    font-family: BBH Sans Bogle, serif;
+    letter-spacing: 10px;
+    font-size: 3.75em;
+}
+
+nav {
+    padding-left: 20px;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+.reglog {
+    position: absolute;
+    right: 1.5em;
+    top: 6.1em;
+    font-weight: 500;
+}
+.reglog ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 1em;
+    align-items: end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-direction: column;
+    font-family: Arimo, serif;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+nav a, .reglog a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+    color: rgba(175, 175, 175, 0.8);
+    border-top: solid 0.5px rgb(130, 130, 130);
+    padding: 10px;
+    max-height: 30px;
+    margin-top: auto;
+}
+
+h2 {
+    margin-top: 0.5em;
+}
+
+.index {
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px auto;
+    min-width: 23em;
+    max-width: 90%;
+    padding: 1%+20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 1em;
+}
+
+.index h2 {
+    font-family: Fjalla One, serif;
+    margin-bottom: 10px;
+}
+
+.index p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.current {
+    color: rgb(199, 199, 199);
+    font-weight:900;
+}
+
+.tank, .tank2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-bottom: 1px solid rgb(79, 79, 79);
+}
+
+.index > :last-child {
+    border-bottom: none;
+}
+
+.hetkoz {
+    color: gray;
+    margin-top: 0px;
+
+}
+
+.hetkoz {
+    margin-top: 1px !important;
+}
+
+.leiras {
+    margin-bottom: 1em;
+}
+
+.kep img {
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.19);
+    border: 0.5px solid rgb(98, 98, 98);
+    border-radius: 5px;
+}
+
+.kep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.tanktabla {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 100%;
+}
+
+.tanktabla td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 1%;
+}
+
+.tanktabla tr :nth-child(1) {
+    text-align: left;
+    width: 30%;
+}
+
+.telso {
+    color: #674a66;
+}
+.toldal {
+    color: #4d506a;
+}
+.that {
+    color: #6A8D92;
+}
+
+/* formok */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 3.5em;
+}
+.pipa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+.pipa div {
+    margin: 0 0 0 1em;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, textarea::placeholder{
+    color: rgb(62, 62, 62);
+}
+
+input[type="checkbox"] { 
+    transform: scale(1.5);
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    accent-color: rgba(69, 75, 27, 0.822);
+}
+form {
+    margin-top: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 1em;
+    background-color: rgba(69, 75, 27, 0.822);
+    background-image: linear-gradient(60deg, rgba(69, 75, 27, 0.822), rgba(109, 116, 65, 0.822));
+}
+
+.input-hiba {
+    background-color: rgba(246, 149, 149, 0.822);
+    border: 1px solid #ff5353 !important; 
+}
+
+.error-msg {
+    color: #ff5353;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.regislogin {
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px auto;
+    min-width: 23em;
+    max-width: 90%;
+    padding: 1%+20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+.siker-uzenet {
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(56, 187, 117, 0.822);
+    background-image: linear-gradient(60deg, rgba(49, 163, 102, 0.822), rgba(56, 187, 117, 0.822));
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* teszt */
+#teszt-ablak {
+
+    flex-direction: column;
+    align-content: center;
+}
+
+#teszt-ablak div {
+    padding: 1em;
+    width: calc(100% - 2em);
+}
+
+#szemelyisegteszt {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+#kerdes {
+    text-align: justify;
+    font-size: 1.1em;
+}
+#lehetosegek {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100% !important;
+}
+
+.kvizvalasz input{
+    opacity: 0;
+    cursor: pointer;   
+    display: none;
+}
+.checkmark {
+    height: 4em;
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #c2c2c2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.kvizvalasz input:checked + .checkmark{
+    border-color: rgba(69, 75, 27, 0.822);
+}
+
+#valasztas1 {
+    background-color: rgb(181, 156, 107);
+}
+#valasztas2 {
+    background-color: rgb(69, 75, 27);
+}
+#valasztas3 {
+    background-image: url(/kep/teszt/terepminta.jpg);
+}
+#valasztas4 {
+    background-color: rgb(125, 118, 67);
+}
+
+/* teszt vege */
+#tanknev {
+    font-size: 2em;
+    font-weight: 800;
+}
+.igazit {
+    margin: auto;
+    text-align: center;
+}
+.tesztkep {
+    height: auto;
+    width: 100%;
+    border: 0.5px solid rgb(98, 98, 98);
+    border-radius: 5px;
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+
+@media (hover: hover) {
+    nav a:hover {
+        color: rgb(135, 135, 135);
+    }
+    .tank:hover, .tank2:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: box-shadow 0.1s;
+    }
+    button:hover {
+        background-color: rgb(49, 54, 16);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+    .reglog a:hover {
+        color: rgb(135, 135, 135);        
+    }
+    .kvizvalasz input:hover + .checkmark{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    }
+}
+
+@media (min-width: 45em) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav {
+        align-self: center;
+        padding-left: 0;
+    }
+    .tank {
+        flex-direction: row;
+        gap: 3%;
+    }
+    .tank2 {
+        flex-direction: row-reverse;
+        gap: 3%;
+    }
+    .adat {
+        max-width: 60%;
+    }
+    .tank, .tank2 {
+        border-bottom: none;
+    }
+    .tanktabla {
+        width: 80%;
+        margin: auto;
+    }
+    .kep {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .reglog {
+        top: 2.1em;
+    }   
+    .reglog ul {
+        flex-direction: row;
+        gap: 1em;
+        align-items: center;
+    }
+    .regislogin {
+        width: 80%;
+    }
+    #lehetosegek {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .kvizvalasz {
+        width: calc(50% - 8px);
+    }
+}
+
+@media (min-width: 80em ) {
+    .tanktabla {
+        margin: auto;
+    }
+    .index {
+        max-width: 75%;
+    }
+    .tank, .tank2 {
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 2%;
+        border-radius: 5px;
+    }
+    .regislogin {
+        max-width: 100vh;
+    }
+}
